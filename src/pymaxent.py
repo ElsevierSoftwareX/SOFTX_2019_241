@@ -56,7 +56,7 @@ def moments_d(f,k,x):
     for i in range(0,k):
         xp = np.power(x,i)      # compute x^p
         xpf = np.dot(xp,f)      # compute x^p * f(x)
-        mom.append(np.sum(xpf)) # compute moment: sum(x^p * f(x))
+        moms.append(np.sum(xpf)) # compute moment: sum(x^p * f(x))
     return np.array(moms)
 
 def moments(f, k, rndvar=None, bnds=None):
